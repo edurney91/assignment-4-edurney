@@ -1,0 +1,326 @@
+/*
+Project Name: Relaxr with JS
+Client: Relaxr
+Author: Elizabeth Durney
+Developer @GA in BOS
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     background color: #f0efef;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES - Project 2
+/*******************************************/
+header {
+  float: left;
+  width: 100%;
+  background: #033048;
+  text-align: center;
+}
+
+
+h1{
+  color: white;
+  font-weight: 800;
+  font-size: 48px;
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+header nav{
+  float: right;
+  font-size: 24px;
+  color: #f9e42e; 
+  font-weight: 600;
+  width: 75%;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+header nav li{
+ float: right;
+  display: inline-block;
+  width: 15%;
+  padding-top: 10px;
+}
+
+
+h2{
+  font-weight: 800;
+  font-size: 48px;
+  padding: 10px 50px;
+  text-align: left;
+  color: #033048;
+}
+
+h3{
+  color: #033048;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/*.moreButton{
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}*/
+
+span{
+    font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h4{
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+
+.wide-left-column{
+  float: left;
+  width: 700px;
+}
+
+.wide-left-column p{
+  font-weight: 300;
+  font-size: 24px;
+  color: #606161;
+}
+
+.wide-left-column p::first-letter{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#readMoreButton1{
+  float: right;
+  padding: 5px 0px 10px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#readLessButton1{
+  float: right;
+  padding: 5px 0px 10px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+#readMoreButton2{
+  float: right;
+  padding: 5px 0px 10px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+#readLessButton2{
+  float: right;
+  padding: 5px 0px 10px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #033048;
+ }
+
+
+.post-implemented{
+  float: left;
+}
+.post-traveled{
+  float: left;
+
+}
+
+
+
+.side-right-column{
+  width: 240px;
+  float: right;
+  font-weight: 300;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.categories{
+  float: right;
+  font-size: 24px;
+  font-weight: 300;
+  color:#033048;
+}
+
+.categories nav{
+  float: right;
+  color: #033048;
+}
+
+#learnMoreButton1{
+  float: right;
+}
+
+.categories ul li{
+  float: right;
+  color: #033048;
+}
+
+.about{
+  float: right;
+  font-size: 22px;
+  font-weight: 300;
+  color: #033048;
+  
+}
+
+.about p{
+  float: right;
+  color: #033048;
+}
+
+#learnMoreButton2{
+  font-weight: 600;
+  font-size: 22px;
+  float: right;
+  cursor: pointer;
+
+}
+
+
+
+.ad-unit{
+  float: right;
+  }
+
+button{
+   font-size: 12px;
+  font-weight: 800;
+  color: #f0efef;
+  background: #033048;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.signup{
+  background-color: #f9e42e;
+  padding: 20px 50px;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+footer{
+  text-align: center;
+  background-color: #121212;
+  width: 100%;
+  float: left;
+}
+
+
+
+footer h2{
+  color:#f9e42e;
+  font-size:48px;
+  font-weight: 800;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+footer img{
+  display: inline-block;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  width: 30px;
+  height: 30px;
+  padding: 0px 5px;
+  }
+
+ 
+ footer p{
+  font-size: 9px;
+  font-weight: 600;
+  color:#f0efef;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
